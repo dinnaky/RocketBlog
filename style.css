@@ -1,0 +1,200 @@
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-purple);
+    font-family: 'Poppins';
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS HEADER*/
+
+header {
+    background-color: var(--purple-bg);
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-bottom: 4px solid var(--green);
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: border-left .2s;
+    font-size: 18px;
+    transition: color .2s;
+}
+
+nav ul li a:hover {
+    color: #b9b9b9;
+}
+
+nav #home {
+    border-left: 2px solid var(--green);
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 8px 10px;
+    border: transparent;
+    background-color: var(--dark-bg);
+    color: var(--light-purple);
+}
+
+.search button {
+    border-bottom-right-radius: 5px;
+    padding: 0 15px;
+    border: transparent;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+
+/*CSS TEXT-HEADER*/
+
+.text-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 40%;
+}
+
+.text h1 {
+    font-size: 36px;
+    color: var(--button-bg);
+}
+
+.text p {
+    font-size: 18px;
+    color: var(--light-purple)
+}
+
+.text a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--button-bg);
+}
+
+.button-readmore {
+    margin: 1em 0;
+    display: flex;
+}
+
+/*CSS MAIN*/
+
+.first-section {
+    margin: 2.5em 0;
+    width: 80%;
+    display: flex;
+}
+
+.right, .left h2{
+    color: var(--purple-bg);
+    font-size: 24px;
+}
+ 
+.right, .left p {
+    font-size: 16px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-header-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*CSS FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section {
+    width: 80%;
+}
+
+footer h2 {
+    color: var(--purple-bg);
+    font-size: 24px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+
+footer img {
+    width: 320px;
+}
+
+footer ul li div{
+    width: 90%;
+    cursor: pointer;
+}
+
+footer ul li {
+    transition: all .2s;
+}
+
+footer ul li:hover {
+    transform: scale(1.01);
+}
+
+.copy {
+    text-align: center;
+    padding: 2em 0;
+}
